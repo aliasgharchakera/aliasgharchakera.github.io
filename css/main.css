@@ -1,0 +1,405 @@
+/* * {
+  border: 1px solid red;
+} */
+
+@font-face {
+  font-family: akkurat-mono;
+  src: url(../assets/fonts/Akkurat-Mono.otf); }
+@font-face {
+  font-family: akkurat;
+  src: url(../assets/fonts/Akkurat.ttf); }
+    
+html {
+  background-color: black;
+  color: white;
+  font-family: akkurat, sans-serif;
+}
+
+header {
+  padding: 16px;
+  margin-bottom: 32px;
+  display: flex;
+  /* flex-direction: column; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+
+a, .text-unit, .counter, .mono-head {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: akkurat-mono;
+  font-size: 12px;
+  /* letter-spacing: 0.2px; */
+  letter-spacing: 0.8px;
+  transition: all .135s cubic-bezier(.4,0,.6,1)
+}
+
+header > a {
+  color: white;
+  opacity: 0.65;
+}
+
+a:hover {
+  opacity: 1.0;
+  color: #FFFFFF;
+  transition: all .4s cubic-bezier(0,0,.2,1) 
+}
+
+.selected {
+  color: #FFFFFF;
+  opacity: 1.0;
+}
+
+header a, footer a {
+  margin: 8px;
+}
+
+.mono-head {
+  font-size: 11px;
+}
+
+h2 {
+  font-weight: normal;
+   margin: 0;
+   font-size: 32px;
+   line-height: 36px;
+   letter-spacing: 0px;
+   margin-block-start: 40px;
+   margin-block-end: 24px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  margin-block-start: 16px;
+  margin-block-end: 0px;
+}
+
+.container-projects {
+  margin: 16px;
+}
+
+.container-item {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.container-item-lead {
+  margin-top: 124px;
+}
+
+.container-item-text {
+  width: 240px;
+  padding: 24px;
+  padding-right: 64px;
+}
+
+.container-item-text-profile {
+  width: 40%;
+}
+
+.img-item {
+  width: 72%;
+  height: 100%;
+  max-width: 1200px;
+  border-radius: 12px;
+  opacity: 1.0;
+}
+
+
+.profile-text {
+  max-width: 640px;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 24px;
+  padding-right: 56px;  
+}
+
+
+.pinterest {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* flex-direction: column; */
+  /* width: 400px; */
+  flex-wrap: wrap;
+  width: 72%;
+  max-width: 1200px;
+  /* width: 550px; */
+}
+
+.pinterest>.pic{
+  /* width: 280px;
+  height: 280px; */
+  width: 140px;
+  height: 64px;
+  display: block;
+  margin: 4px;
+  border-radius: 4px;
+}
+
+.mini {
+  border-radius: 8px;
+  width: 100%;
+  margin: 4px;
+  height: 80px;
+}
+
+
+
+#test {
+  
+}
+
+body {
+  margin: 0px;
+}
+
+.text-about{
+  font-size: 54px;
+  letter-spacing: -4px;
+  margin: 0;
+  line-height: 1.2;
+  color: black;
+  text-shadow:
+  -1px -1px 0 #fff,  
+   1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.container-counter {
+  flex-direction: column;
+}
+
+.container-counter-row {
+  align-items: baseline;
+  display: flex;
+  height: 50px;
+}
+
+
+.text-unit {
+    /* font-size: 12px; */
+    letter-spacing: normal;
+    padding-left: 8px;
+    /* text-transform: capitalize; */
+    font-weight: bold;
+    transform: rotate(90deg);
+    
+}
+
+canvas {
+  
+  z-index: -1;
+  border-radius: 12px;
+
+}
+
+#playlist{
+  border-radius: 12px !important;  
+  z-index: 1;
+}
+
+.profile-content-container {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: fit-content;
+  padding-top: 100px;
+  align-content: baseline;
+}
+
+.profile-content-block {
+  width: 44%;
+  height: 200px;
+  border-radius: 12px;
+  margin: 8px;
+  background-color: rgba(255,255,255,0.15);
+}
+
+.block-double {
+  height: 480px;
+}
+
+
+.profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* margin: 4px; */
+  /* transform: rotate(180deg); */
+}
+
+.mapouter, .gmap_canvas {
+  border-radius: 12px;
+}
+
+.i4ewOd-pzNkMb-haAclf {
+  background-color: rgb(24,24,24) !important;
+}
+
+.mapouter {
+  background-color: black;
+  
+}
+
+.counter {
+  padding-bottom: 80px;
+  padding-top: 10px;
+}
+
+.theory-text {
+  min-width: 240px;
+  width: 50%;
+  max-width: 340px;
+ }
+
+ .show {
+   display: none;
+ }
+
+
+@media only screen
+and (max-width : 720px)
+ {
+
+  .container-item {
+    flex-direction: column;
+    /* s */
+  }
+
+  .container-item-lead {
+    margin-top: 92px;
+}
+
+  .container-item-text {
+    max-width: 520px;
+    width: 88%;
+    padding-bottom: 48px;
+    min-width: 0px;
+  }
+
+
+  /* pinterest */
+  .pinterest>.pic {
+    width: 24%;
+    height: 160px;
+    margin: 0.5%;
+  }
+
+  /* portfolio image */
+  .img-item, .pinterest, 
+  .profile-content-container {
+    width: 100%;
+  }
+
+  .no-text {
+    display: none;
+  }
+
+  header {
+    touch-action: manipulation;
+  }
+
+  /* header > a {
+    font-size: 16px;
+  } */
+
+
+  /* profile stuff clean up */
+
+  .container-item-text-profile {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .profile-text, .container-item-text {
+    padding-right: 0;
+  }
+
+  .profile-content-block {
+    width: 100%;
+    height: 416px;
+  }
+
+  .profile-content-container {
+    padding-top: 40px;
+  }
+
+
+ 
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+ 
+
+  
+  /* .profile-content-container {
+    
+  }
+
+  .container-item-text-profile {
+    width: 100%;
+    min-width: 480px;
+  }
+
+  .profile-content-block {
+    width: 100%;
+  } */
+  
+
+ }
+
+ .container-item-text > a {
+  /* font-size: 12px; */
+ }
+
+.fab, .fas {
+  padding: 4px;
+  padding-bottom: 52px;
+  padding-top: 24px;
+  font-size: 20px;
+}
+
+.fas{
+  font-size: 20px;
+}
+
+
+
+header > a {
+  margin: 0px;
+  padding: 12px;
+}
+
+/* Add this to your main.css file */
+.video-container {
+  display: flex;
+  gap: 20px; /* This adds padding between the videos */
+}
+
+.video-container video {
+  height: 500px; /* Restrict the height to 300px */
+  flex: 1; /* Make videos take equal width */
+}
+
+.video-container img {
+  height: 500px; /* Restrict the height to 300px */
+  flex: 1; /* Make videos take equal width */
+}

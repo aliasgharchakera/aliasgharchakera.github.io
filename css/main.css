@@ -356,8 +356,14 @@ header > a {
 @media (max-width: 768px) {
   .video-container.scrollable {
     display: block;
-    overflow-x: auto;
+    overflow-x: scroll;
     white-space: nowrap;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  }
+
+  .video-container.scrollable::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
   }
 
   .video-container.scrollable video,

@@ -122,56 +122,8 @@ p {
 }
 
 
-.pinterest {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  /* flex-direction: column; */
-  /* width: 400px; */
-  flex-wrap: wrap;
-  width: 72%;
-  max-width: 1200px;
-  /* width: 550px; */
-}
-
-.pinterest>.pic{
-  /* width: 280px;
-  height: 280px; */
-  width: 140px;
-  height: 64px;
-  display: block;
-  margin: 4px;
-  border-radius: 4px;
-}
-
-.mini {
-  border-radius: 8px;
-  width: 100%;
-  margin: 4px;
-  height: 80px;
-}
-
-
-
-#test {
-  
-}
-
 body {
   margin: 0px;
-}
-
-.text-about{
-  font-size: 54px;
-  letter-spacing: -4px;
-  margin: 0;
-  line-height: 1.2;
-  color: black;
-  text-shadow:
-  -1px -1px 0 #fff,  
-   1px -1px 0 #fff,
-   -1px 1px 0 #fff,
-    1px 1px 0 #fff;
 }
 
 .container-counter {

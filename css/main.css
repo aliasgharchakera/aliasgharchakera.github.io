@@ -91,6 +91,15 @@ p {
   /* border: 1px solid green; */
 }
 
+.container-misc {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  /* border: 1px solid green; */
+}
+
 .container-item-lead {
   margin-top: 124px;
 }
@@ -100,6 +109,16 @@ p {
   padding: 24px;
   padding-right: 64px;
   /* border: 1px solid red; */
+}
+
+.container-item-text p[data-url] {
+  /* color: #007bff; Adjust the color as needed */
+  text-decoration: none;
+}
+
+.container-item-text p[data-url]:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .container-item-text-profile {

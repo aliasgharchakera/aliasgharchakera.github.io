@@ -4,7 +4,11 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ali Asghar Chakera</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
@@ -18,11 +22,18 @@
       href="./favicons/favicon-16x16.png"
     />
     <link rel="manifest" href="./favicons/site.webmanifest" />
-    <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link
+      rel="mask-icon"
+      href="./favicons/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-TileImage" content="./favicons/mstile-144x144.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="./favicons/mstile-144x144.png"
+    />
     <meta name="theme-color" content="#000000" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
@@ -93,7 +104,7 @@
           class="img-item"
           src="./assets/images/projects/thekedaar/cover.png"
           onclick="window.location.href = 'https://aliasgharchakera.github.io/thekedaar-hatao/';"
-          />
+        />
       </div>
 
       <!-- Raytracer -->
@@ -102,15 +113,71 @@
           <h5 class="mono-head">Raytracer</h5>
           <!-- <h2>Raytracer</h2> -->
           <p>My custom implementation of a raytracer in C++</p>
-          <a href="https://aliasgharchakera.github.io/raytracer/"
-            >details ></a
-          >
+          <a href="https://aliasgharchakera.github.io/raytracer/">details ></a>
         </div>
         <img
           class="img-item"
           src="./assets/images/projects/raytracer/samples.png"
           onclick="window.location.href = 'https://aliasgharchakera.github.io/raytracer/';"
         />
+      </div>
+
+      
+
+      <!-- Other Projects -->
+      <div class="container-misc container-item-lead hide">
+        <div class="container-item-text">
+          <h5 class="mono-head">Evolutionary Computing Projects</h5>
+          <!-- <h2>Evolutionary Computing Projects</h2> -->
+          <p
+            data-url="https://github.com/aliasgharchakera/taichi-ga"
+          >Taichi-based GPU accelerated Genetic Algorithm</p>
+          <p
+            data-url="https://github.com/aliasgharchakera/lights-optimization-using-evolutionary-algorithms"
+          >Artificial lights optimization using Evolutionary Algorithm</p>
+          <p
+            data-url="https://github.com/aliasgharchakera/CI-Spring23-Assignment02"
+          >Capacitated Vehicle Routing Problem using Ant Colony Optimization</p>
+          <p
+            data-url="https://github.com/aliasgharchakera/CI-Spring23-Assignment01"
+          >TSP, Knapsack & Graph Coloring using Evolutionary Algorithms</p>
+        </div>
+        <div class="container-item-text">
+          <h5 class="mono-head">Python Projects</h5>
+          <!-- <h2>Python Projects</h2> -->
+          <p
+            data-url="https://github.com/aliasgharchakera/word-game"  
+          >Wordle inspired word game leveraging Weak-AVL Trees</p>
+          <p
+            data-url="https://github.com/aliasgharchakera/animal-recognition-vgg16"
+          >Convolutional Neural Network for recognizing animals</p>
+          <p
+            data-url="https://github.com/aliasgharchakera/word-book"
+          >A command-line interface for a thesaurus and translator</p>
+        </div>
+        <div class="container-item-text">
+          <h5 class="mono-head">Other Coding Projects</h5>
+          <!-- <h2>Other Coding Projects</h2> -->
+          <p
+            data-url="https://github.com/aliasgharchakera/crazy-taxi"
+          >C++ based implementation of the popular game Crazy Taxi using SDL</p>
+          <p
+            data-url="https://github.com/aliasgharchakera/flappy-bird"
+          >Verilog-based implementation of the popular game Flappy Bird</p>
+        </div>
+        <div class="container-item-text">
+          <h5 class="mono-head">Misc Projects</h5>
+          <!-- <h2>Misc Projects</h2> -->
+          <p
+            data-url="https://github.com/aliasgharchakera/floor-cleaning-robot"
+          >Optimized algorithm for a floor cleaning robot</p>
+          <p
+            data-url="https://www.canva.com/design/DAFaJ1SR99E/JNi3lbjqle6GeC4zdJ6q3Q/view?utm_content=DAFaJ1SR99E&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+          >Rapid ad-hoc communications system in case of a disaster</p>
+          <p
+            data-url="https://github.com/aliasgharchakera/RISC-V-pipelined-processor"
+          >RISC-V pipelined processor implemented in verilog for concurrent execution of instructions</p>
+        </div>
       </div>
 
       <div class="container-item">
@@ -127,10 +194,7 @@
       <div class="social-media show">
         <p id="email">
           <b>
-            <a
-              href="https://www.instagram.com/princebiscu1ts/"
-              target="_blank"
-            >
+            <a href="https://www.instagram.com/princebiscu1ts/" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
           </b>
@@ -155,5 +219,17 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      document.querySelectorAll('.container-item-text p[data-url]').forEach(function (p) {
+        p.addEventListener('click', function () {
+          window.location.href = p.getAttribute('data-url');
+        });
+        p.addEventListener('mouseover', function () {
+          p.style.cursor = 'pointer';
+        });
+      });
+    </script>
+    
   </body>
 </html>

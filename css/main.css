@@ -86,8 +86,9 @@ p {
   width: 90%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 12px;
+  border: 1px solid green;
 }
 
 .container-item-lead {
@@ -98,6 +99,7 @@ p {
   width: 240px;
   padding: 24px;
   padding-right: 64px;
+  border: 1px solid red;
 }
 
 .container-item-text-profile {

@@ -108,6 +108,7 @@ p {
   width: 72%;
   height: 100%;
   max-width: 1200px;
+  max-height: 500px;
   border-radius: 12px;
   opacity: 1.0;
 }
@@ -346,12 +347,24 @@ header > a {
   gap: 20px; /* This adds padding between the videos */
 }
 
-.video-container video {
+.video-container video,
+.video-container img  {
   height: 500px; /* Restrict the height to 300px */
   flex: 1; /* Make videos take equal width */
 }
 
-.video-container img {
-  height: 500px; /* Restrict the height to 300px */
-  flex: 1; /* Make videos take equal width */
+@media (max-width: 768px) {
+  .video-container.scrollable {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .video-container.scrollable video,
+  .video-container.scrollable img {
+    display: inline-block;
+    width: auto;
+    height: 100%; /* or set a specific height */
+    vertical-align: middle;
+  }
 }
